@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getVidInfo } from "../Actions/DownloadAction";
 
-import { AppSearchBar, Loader, Message } from "../Componets";
+// import { AppSearchBar, Loader, Message } from "../Componets";
+import AppSearchBar from "../Componets/AppSearchBar";
+import Loader from "../Componets/LoaderLoader";
+import Message from "../Componets/Message";
 import { ListGroup, Row, Col, Button } from "react-bootstrap";
-import downloader from "js-file-download";
-import axios from "axios";
 const HomeScreen = () => {
   const vidInfo = useSelector((state) => state.getvidInfo);
 

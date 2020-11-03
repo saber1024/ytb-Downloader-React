@@ -1,8 +1,6 @@
 import "./App.css";
-import AppSearchBar from "./Componets/AppSearchBar";
-
-import { Header } from "./Componets";
-import { HomeScreen } from "./Screens";
+// import Header from "./Componets/Header";
+// import HomeScreen from "./Screens/HomeScreen";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 function App() {

@@ -1,14 +1,23 @@
 {
   "name": "downloader-front-end",
   "version": "0.1.0",
-  "proxy": "http://127.0.0.1:5000",
+  "proxy": "http://127.0.0.1:8080",
   "private": true,
   "dependencies": {
+    "@aws-amplify/cli": "^4.32.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
+    "babel-loader": "^8.1.0",
     "bootstrap": "^4.5.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^5.0.0",
+    "extract-text-webpack-plugin": "2.1.2",
+    "html-webpack-plugin": "^4.5.0",
     "js-file-download": "^0.4.12",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -21,6 +30,7 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
+    "style-loader": "^2.0.0",
     "thunk": "^0.0.1",
     "web-vitals": "^0.2.4"
   },
@@ -28,7 +38,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "depoly": "webpack"
   },
   "eslintConfig": {
     "extends": [
@@ -47,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.1.0"
   }
 }

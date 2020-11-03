@@ -1,4 +1,4 @@
-import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
+import { Button, Col, Form, Row } from "react-bootstrap";
 
 import React, { Component } from "react";
 
@@ -22,8 +22,8 @@ export default class AppSearchBar extends Component {
     return (
       <div>
         <Form onSubmit={(e) => this.submitHandler(e)}>
-          <Row>
-            <Col md={5}>
+          <Row className="justify-content-center">
+            <Col md={5} sm={4}>
               <Form.Control
                 placeholder="Input url"
                 aria-label="Input url"
@@ -33,7 +33,7 @@ export default class AppSearchBar extends Component {
                 onChange={(e) => this.setState({ url: e.target.value })}
               />
             </Col>
-            <Col md={3}>
+            <Col md={3} sm={2}>
               <Button type="submit" variant="primary">
                 提交
               </Button>
