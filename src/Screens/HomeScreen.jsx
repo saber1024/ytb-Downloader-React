@@ -4,7 +4,7 @@ import { getVidInfo } from "../Actions/DownloadAction";
 
 // import { AppSearchBar, Loader, Message } from "../Componets";
 import AppSearchBar from "../Componets/AppSearchBar";
-import Loader from "../Componets/LoaderLoader";
+import Loader from "../Componets/Loader";
 import Message from "../Componets/Message";
 import { ListGroup, Row, Col, Button } from "react-bootstrap";
 const HomeScreen = () => {
