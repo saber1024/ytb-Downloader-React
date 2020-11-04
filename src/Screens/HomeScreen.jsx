@@ -23,7 +23,7 @@ const HomeScreen = () => {
   return (
     <div>
       <h3>YouTube视频下载</h3>
-      <AppSearchBar onSubmit={(url) => submitHandler(url)} />
+      <AppSearchBar className="pt-2" onSubmit={(url) => submitHandler(url)} />
       <div className="py-3">
         {error ? (
           <Message variant="danger">{error}</Message>
