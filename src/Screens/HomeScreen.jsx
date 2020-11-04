@@ -1,8 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getVidInfo } from "../Actions/DownloadAction";
-
-// import { AppSearchBar, Loader, Message } from "../Componets";
 import AppSearchBar from "../Componets/AppSearchBar";
 import Loader from "../Componets/Loader";
 import Message from "../Componets/Message";
@@ -24,6 +22,7 @@ const HomeScreen = () => {
 
   return (
     <div>
+      <h3>YouTube视频下载</h3>
       <AppSearchBar onSubmit={(url) => submitHandler(url)} />
       <div className="py-3">
         {error ? (
